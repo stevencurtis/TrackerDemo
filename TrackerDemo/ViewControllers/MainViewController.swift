@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+    private var mainViewModel: MainViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        mainViewModel = MainViewModel()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
 
 

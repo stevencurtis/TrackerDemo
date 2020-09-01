@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,15 @@
 		C940D63666162A1C4E8D298F /* Pods_TrackerDemo_TrackerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F092B34119B54F74637AC4 /* Pods_TrackerDemo_TrackerDemoUITests.framework */; };
 		CAECD33324FEA16500B63961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD33224FEA16500B63961 /* AppDelegate.swift */; };
 		CAECD33524FEA16500B63961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD33424FEA16500B63961 /* SceneDelegate.swift */; };
-		CAECD33724FEA16500B63961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD33624FEA16500B63961 /* ViewController.swift */; };
+		CAECD33724FEA16500B63961 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD33624FEA16500B63961 /* MainViewController.swift */; };
 		CAECD33A24FEA16500B63961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAECD33824FEA16500B63961 /* Main.storyboard */; };
 		CAECD33C24FEA16900B63961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAECD33B24FEA16900B63961 /* Assets.xcassets */; };
 		CAECD33F24FEA16900B63961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAECD33D24FEA16900B63961 /* LaunchScreen.storyboard */; };
 		CAECD34A24FEA16900B63961 /* TrackerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD34924FEA16900B63961 /* TrackerDemoTests.swift */; };
 		CAECD35524FEA16900B63961 /* TrackerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD35424FEA16900B63961 /* TrackerDemoUITests.swift */; };
+		CAECD36524FEA39A00B63961 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36424FEA39A00B63961 /* APIKey.swift */; };
+		CAECD36724FEA44F00B63961 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36624FEA44F00B63961 /* Constants.swift */; };
+		CAECD36A24FEA4BD00B63961 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36924FEA4BD00B63961 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +49,7 @@
 		CAECD32F24FEA16500B63961 /* TrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAECD33224FEA16500B63961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAECD33424FEA16500B63961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAECD33624FEA16500B63961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAECD33624FEA16500B63961 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CAECD33924FEA16500B63961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAECD33B24FEA16900B63961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAECD33E24FEA16900B63961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,9 @@
 		CAECD35024FEA16900B63961 /* TrackerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAECD35424FEA16900B63961 /* TrackerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerDemoUITests.swift; sourceTree = "<group>"; };
 		CAECD35624FEA16900B63961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAECD36424FEA39A00B63961 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIKey.swift; path = ../APIKey.swift; sourceTree = "<group>"; };
+		CAECD36624FEA44F00B63961 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CAECD36924FEA4BD00B63961 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		D3B017AF78B484FC74EBF076 /* Pods-TrackerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerDemoTests/Pods-TrackerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D72DFF6A632231829499811B /* Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerDemo-TrackerDemoUITests/Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7E43D9E302CE543FE6E2FE /* Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TrackerDemo-TrackerDemoUITests/Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +107,6 @@
 				D3B017AF78B484FC74EBF076 /* Pods-TrackerDemoTests.debug.xcconfig */,
 				9F8C9F953F5AC4536A612D72 /* Pods-TrackerDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,7 +147,9 @@
 			children = (
 				CAECD33224FEA16500B63961 /* AppDelegate.swift */,
 				CAECD33424FEA16500B63961 /* SceneDelegate.swift */,
-				CAECD33624FEA16500B63961 /* ViewController.swift */,
+				CAECD36824FEA47A00B63961 /* Others */,
+				CAECD36B24FEA55200B63961 /* ViewControllers */,
+				CAECD36C24FEA55D00B63961 /* ViewModels */,
 				CAECD33824FEA16500B63961 /* Main.storyboard */,
 				CAECD33B24FEA16900B63961 /* Assets.xcassets */,
 				CAECD33D24FEA16900B63961 /* LaunchScreen.storyboard */,
@@ -167,6 +174,31 @@
 				CAECD35624FEA16900B63961 /* Info.plist */,
 			);
 			path = TrackerDemoUITests;
+			sourceTree = "<group>";
+		};
+		CAECD36824FEA47A00B63961 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD36424FEA39A00B63961 /* APIKey.swift */,
+				CAECD36624FEA44F00B63961 /* Constants.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CAECD36B24FEA55200B63961 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD33624FEA16500B63961 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CAECD36C24FEA55D00B63961 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD36924FEA4BD00B63961 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,9 +494,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAECD33724FEA16500B63961 /* ViewController.swift in Sources */,
+				CAECD36724FEA44F00B63961 /* Constants.swift in Sources */,
+				CAECD33724FEA16500B63961 /* MainViewController.swift in Sources */,
 				CAECD33324FEA16500B63961 /* AppDelegate.swift in Sources */,
+				CAECD36524FEA39A00B63961 /* APIKey.swift in Sources */,
 				CAECD33524FEA16500B63961 /* SceneDelegate.swift in Sources */,
+				CAECD36A24FEA4BD00B63961 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
