@@ -6,7 +6,6 @@
 //  Copyright © 2020 Steven Curtis. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 import RxCocoa
 import GoogleMaps
@@ -37,7 +36,10 @@ class LocationManager: NSObject, LocationManagerProtocol, CLLocationManagerDeleg
         locationManager.delegate = self
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        self.locationManager.startUpdatingLocation()
+
+        DispatchQueue.main.async{
+            self.locationManager.startUpdatingLocation()
+        }
     }
     
     // MARK: - CLLocationManagerDelegate

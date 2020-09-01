@@ -95,6 +95,7 @@
                         <outlet property="averageSpeedLabel" destination="q16-x0-ZI6" id="u2F-7s-fEv"/>
                         <outlet property="distanceLabel" destination="JtY-x3-aPq" id="nmK-j1-hXd"/>
                         <outlet property="durationLabel" destination="382-Na-wcU" id="6RU-vc-jWe"/>
+                        <outlet property="mapView" destination="en2-8R-3AA" id="nje-VP-i6O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

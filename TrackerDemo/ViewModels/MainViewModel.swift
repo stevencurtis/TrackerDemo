@@ -50,7 +50,7 @@ class MainViewModel {
                 locationManager.speedRelay,
                 resultSelector: { (speed, distance) -> (String) in
                     guard let distance = distance else {return ""}
-                    let kmh = distance / speed
+                    let kmh = abs(distance / speed)
                   return String(format: "%.2f km/h", kmh)
               }
             ).asDriver(onErrorJustReturn: (""))
