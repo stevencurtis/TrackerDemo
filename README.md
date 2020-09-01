@@ -1,12 +1,10 @@
 ## TrackerDemo
 
-
 # Installation
-
 ## 1. Download
 Download the Zip archive from your web client / browser as appropriate, and save to a suitable location on your machine.
 
-## 2. Refresh Third Party Frameworks
+## 2. Refresh Third Party Frameworks and Dependencies
 This application uses cocoapods for dependencies, and these have been included in the zip file but it is good practice to `pod install` from the command line to refresh the Pods. 
 The frameworks used are `GoogleMaps`, `RxSwift`, `RxCocoa`, `RxTest` and `RxBlocking`.
 Full details on how to install `CocoalPods` is avaliable [at cocoapods.org](https://cocoapods.org)
@@ -19,8 +17,6 @@ This should be placed into a file called `APIKey.Swift` with the following forma
 let key = "YourKey"
 ```
 
-
-
 # Usage
 Traverse to the folder the files have been saved in. Open `TrackerDemo.scworkspace`, using Xcode.
 
@@ -31,7 +27,8 @@ Traverse to the folder the files have been saved in. Open `TrackerDemo.scworkspa
 **Simulated locations**
 The simulator can be set to provide location information, Features>Location>City Bicycle Ride simulates the simulator being taken on a City Bicycle ride.
 
-# Restrictions
+# Notes
+## Restrictions
 - Runs in Xcode11
 - Git used for source control
 - GoogleMaps used
@@ -41,3 +38,8 @@ The simulator can be set to provide location information, Features>Location>City
 - Portrait only
 - iOS support only (no iPad OS)
 - iOS Depolyment Target 13.0
+- Error handling messages are not production-ready
+
+# Approach:
+`RxSwift` has been used in combination with an `MVVM`architecture. 
+The **LocationManager** has been coupled with a **mock** `MockLocationManager` so in the tests real locations are not used.  
