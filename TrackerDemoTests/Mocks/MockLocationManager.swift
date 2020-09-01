@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 import GoogleMaps
-@testable import ReactiveVersion
+@testable import TrackerDemo
 
 class MockLocationManager: LocationManagerProtocol{
     var initialTripLocationRelay = BehaviorRelay<CLLocation?>(value: Constants.london )

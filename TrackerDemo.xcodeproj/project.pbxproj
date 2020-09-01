@@ -23,6 +23,9 @@
 		CAECD36A24FEA4BD00B63961 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36924FEA4BD00B63961 /* MainViewModel.swift */; };
 		CAECD36E24FEA76100B63961 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36D24FEA76100B63961 /* LocationManager.swift */; };
 		CAECD37124FEA7AE00B63961 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD37024FEA7AE00B63961 /* MockLocationManager.swift */; };
+		CAECD37424FEB4D000B63961 /* DateComponents+formattedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD37324FEB4D000B63961 /* DateComponents+formattedTime.swift */; };
+		CAECD37724FEB4FB00B63961 /* DateComponents+formattedTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD37624FEB4FB00B63961 /* DateComponents+formattedTimeTests.swift */; };
+		CAECD37924FEB56900B63961 /* MockLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD37824FEB56900B63961 /* MockLocations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		CAECD36924FEA4BD00B63961 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CAECD36D24FEA76100B63961 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		CAECD37024FEA7AE00B63961 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		CAECD37324FEB4D000B63961 /* DateComponents+formattedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+formattedTime.swift"; sourceTree = "<group>"; };
+		CAECD37624FEB4FB00B63961 /* DateComponents+formattedTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+formattedTimeTests.swift"; sourceTree = "<group>"; };
+		CAECD37824FEB56900B63961 /* MockLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocations.swift; sourceTree = "<group>"; };
 		D3B017AF78B484FC74EBF076 /* Pods-TrackerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerDemoTests/Pods-TrackerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D72DFF6A632231829499811B /* Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerDemo-TrackerDemoUITests/Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7E43D9E302CE543FE6E2FE /* Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TrackerDemo-TrackerDemoUITests/Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 			children = (
 				CAECD33224FEA16500B63961 /* AppDelegate.swift */,
 				CAECD33424FEA16500B63961 /* SceneDelegate.swift */,
+				CAECD37524FEB4DD00B63961 /* Extensions */,
 				CAECD36F24FEA76600B63961 /* Services */,
 				CAECD36824FEA47A00B63961 /* Others */,
 				CAECD36B24FEA55200B63961 /* ViewControllers */,
@@ -167,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				CAECD34924FEA16900B63961 /* TrackerDemoTests.swift */,
+				CAECD37624FEB4FB00B63961 /* DateComponents+formattedTimeTests.swift */,
+				CAECD37A24FEB57900B63961 /* Helpers */,
 				CAECD37224FEA7B400B63961 /* Mocks */,
 				CAECD34B24FEA16900B63961 /* Info.plist */,
 			);
@@ -221,6 +230,22 @@
 				CAECD37024FEA7AE00B63961 /* MockLocationManager.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CAECD37524FEB4DD00B63961 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD37324FEB4D000B63961 /* DateComponents+formattedTime.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CAECD37A24FEB57900B63961 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD37824FEB56900B63961 /* MockLocations.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,6 +546,7 @@
 				CAECD33324FEA16500B63961 /* AppDelegate.swift in Sources */,
 				CAECD36E24FEA76100B63961 /* LocationManager.swift in Sources */,
 				CAECD36524FEA39A00B63961 /* APIKey.swift in Sources */,
+				CAECD37424FEB4D000B63961 /* DateComponents+formattedTime.swift in Sources */,
 				CAECD33524FEA16500B63961 /* SceneDelegate.swift in Sources */,
 				CAECD36A24FEA4BD00B63961 /* MainViewModel.swift in Sources */,
 			);
@@ -530,8 +556,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAECD37924FEB56900B63961 /* MockLocations.swift in Sources */,
 				CAECD37124FEA7AE00B63961 /* MockLocationManager.swift in Sources */,
 				CAECD34A24FEA16900B63961 /* TrackerDemoTests.swift in Sources */,
+				CAECD37724FEB4FB00B63961 /* DateComponents+formattedTimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

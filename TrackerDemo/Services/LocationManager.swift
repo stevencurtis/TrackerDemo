@@ -31,7 +31,6 @@ class LocationManager: NSObject, LocationManagerProtocol, CLLocationManagerDeleg
     let initialTripLocationRelay = BehaviorRelay<CLLocation?>(value: nil)
     
     static let shared = LocationManager()
-
     
     private override init() {
         super.init()
