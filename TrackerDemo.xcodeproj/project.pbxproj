@@ -21,6 +21,8 @@
 		CAECD36524FEA39A00B63961 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36424FEA39A00B63961 /* APIKey.swift */; };
 		CAECD36724FEA44F00B63961 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36624FEA44F00B63961 /* Constants.swift */; };
 		CAECD36A24FEA4BD00B63961 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36924FEA4BD00B63961 /* MainViewModel.swift */; };
+		CAECD36E24FEA76100B63961 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD36D24FEA76100B63961 /* LocationManager.swift */; };
+		CAECD37124FEA7AE00B63961 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAECD37024FEA7AE00B63961 /* MockLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CAECD36424FEA39A00B63961 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIKey.swift; path = ../APIKey.swift; sourceTree = "<group>"; };
 		CAECD36624FEA44F00B63961 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CAECD36924FEA4BD00B63961 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CAECD36D24FEA76100B63961 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CAECD37024FEA7AE00B63961 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
 		D3B017AF78B484FC74EBF076 /* Pods-TrackerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerDemoTests/Pods-TrackerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D72DFF6A632231829499811B /* Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerDemo-TrackerDemoUITests/Pods-TrackerDemo-TrackerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7E43D9E302CE543FE6E2FE /* Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TrackerDemo-TrackerDemoUITests/Pods-TrackerDemo-TrackerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			children = (
 				CAECD33224FEA16500B63961 /* AppDelegate.swift */,
 				CAECD33424FEA16500B63961 /* SceneDelegate.swift */,
+				CAECD36F24FEA76600B63961 /* Services */,
 				CAECD36824FEA47A00B63961 /* Others */,
 				CAECD36B24FEA55200B63961 /* ViewControllers */,
 				CAECD36C24FEA55D00B63961 /* ViewModels */,
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				CAECD34924FEA16900B63961 /* TrackerDemoTests.swift */,
+				CAECD37224FEA7B400B63961 /* Mocks */,
 				CAECD34B24FEA16900B63961 /* Info.plist */,
 			);
 			path = TrackerDemoTests;
@@ -199,6 +205,22 @@
 				CAECD36924FEA4BD00B63961 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CAECD36F24FEA76600B63961 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD36D24FEA76100B63961 /* LocationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CAECD37224FEA7B400B63961 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CAECD37024FEA7AE00B63961 /* MockLocationManager.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,6 +519,7 @@
 				CAECD36724FEA44F00B63961 /* Constants.swift in Sources */,
 				CAECD33724FEA16500B63961 /* MainViewController.swift in Sources */,
 				CAECD33324FEA16500B63961 /* AppDelegate.swift in Sources */,
+				CAECD36E24FEA76100B63961 /* LocationManager.swift in Sources */,
 				CAECD36524FEA39A00B63961 /* APIKey.swift in Sources */,
 				CAECD33524FEA16500B63961 /* SceneDelegate.swift in Sources */,
 				CAECD36A24FEA4BD00B63961 /* MainViewModel.swift in Sources */,
@@ -507,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAECD37124FEA7AE00B63961 /* MockLocationManager.swift in Sources */,
 				CAECD34A24FEA16900B63961 /* TrackerDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,7 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -658,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -683,7 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.studeapps.TrackerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -702,7 +726,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.studeapps.TrackerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
