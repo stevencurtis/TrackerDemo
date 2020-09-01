@@ -9,6 +9,10 @@
 import Foundation
 
 class MainViewModel {
+    var locationManager: LocationManagerProtocol!
 
-
+    init(locationManager: LocationManagerProtocol) {
+        self.locationManager = locationManager
+        
+    }
 }

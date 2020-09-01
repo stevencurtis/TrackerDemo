@@ -11,13 +11,22 @@ import UIKit
 class MainViewController: UIViewController {
     private var mainViewModel: MainViewModel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        mainViewModel = MainViewModel()
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var averageSpeedLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+
+    init?(coder: NSCoder, locationManager: LocationManagerProtocol) {
+        mainViewModel = MainViewModel(locationManager: locationManager)
+        super.init(coder: coder)
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 
 

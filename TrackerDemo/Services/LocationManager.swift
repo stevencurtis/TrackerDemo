@@ -20,17 +20,18 @@ protocol LocationManagerProtocol {
 }
 
 class LocationManager: NSObject, LocationManagerProtocol, CLLocationManagerDelegate {
-    static let shared = LocationManager()
     private let locationManager = CLLocationManager()
     private let disposeBag = DisposeBag()
     
     let locationPermissionRelay = BehaviorRelay<CLAuthorizationStatus>(
         value: CLLocationManager.authorizationStatus())
-    
     let locationRelay = BehaviorRelay<CLLocation?>(value: nil)
     let speedRelay = BehaviorRelay<CLLocationSpeed?>(value: nil)
     let distanceRelay = BehaviorRelay<CLLocationDistance>(value: 0)
     let initialTripLocationRelay = BehaviorRelay<CLLocation?>(value: nil)
+    
+    static let shared = LocationManager()
+
     
     private override init() {
         super.init()

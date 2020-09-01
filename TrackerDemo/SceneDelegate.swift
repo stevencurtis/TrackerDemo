@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "MainViewController", creator: { coder in
-            return MainViewController(coder: coder)
+            return MainViewController(coder: coder, locationManager: LocationManager.shared)
         })
         
         let rootNC = UINavigationController(rootViewController: vc)
